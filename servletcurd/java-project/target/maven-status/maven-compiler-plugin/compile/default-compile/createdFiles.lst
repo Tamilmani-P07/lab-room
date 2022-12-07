@@ -1,0 +1,4 @@
+model\MyServlet.class
+model\TitleComparater.class
+model\BookDao.class
+model\Book.class
