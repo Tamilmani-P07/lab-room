@@ -1,0 +1,49 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <nav id="demo">Welcome guys</nav>
+
+
+
+    <!-- <center><h1 id="demo">Welcome!!!</h1></center> class="b1"-->
+    <div id="a">
+        <button id="d1" type="button" onclick="getBook()">click to GET</button><br>
+        <!-- <button id="d2" type="button" onclick="postBook()">click to POST</button><br> -->
+        <!--<button id="d3" class="b1" type="button" onclick="loadPut()">click to PUT</button><br>
+        <button id="d4" class="b1" type="button" onclick="loadDel()">click to DEL</button><br>
+        <button id="d6" class="b1" type="button" onclick="loadHead()">click to HEAD</button> -->
+    </div>
+
+    <div id="b">
+        <form action="/books" method="post">
+            <input type="text" id="id" value="id"><br>
+            <input type="text" id="title" value="title"><br>
+            <input type="text" id="price" value="price"><br>
+            <input type="text" id="author_id" value="author_id"><br>
+            <button id="my" onclick="postBook()">Insert</button>
+        </form>
+    </div>
+    
+    <table border="1" id="books">
+        <tr>
+            <th>ID:</th>
+            <th>TITLE:</th>
+            <th>PRICE:</th>
+            <th>AUTHOR_name:</th>
+        </tr>
+    </table>
+    
+
+
+        <script src="index.js"></script>
+
+</body>
+
+</html>
